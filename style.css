@@ -1,0 +1,193 @@
+*{
+	padding: 0;
+	margin:0;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+}
+html{
+	min-height: 100vh;
+	min-width: 100vh;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+button:focus{
+outline: none;
+}
+#line{
+	grid-area: line;
+	color: #dadce0;
+	background-color: #dadce0;
+	border-color:#dadce0;
+}
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*navBar*/
+	#navbar{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: 1fr 50px 50px 50px 60px;
+	grid-template-areas: ". gmail images gapps sign-in";
+	margin: 20px 20px;
+}
+	.nav-item{
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+	align-self: center;
+	justify-content: center;
+	margin: auto;
+	color: rgba(0, 0, 0, 0.87);
+
+}
+#gmail{
+	grid-area: gmail;
+	jus
+}
+#images{
+	grid-area: images;
+}
+#gapps{
+	grid-area: gapps;
+}
+#sign-in{
+	grid-area: sign-in;
+	color:white;
+	background-color: #4285f4;
+	border-radius: 5%;
+	border-color: #4285f4;
+	height: 28px;
+	width: 65px;
+	line-height: 26px;
+	font-weight: bold;
+	border:1px solid #4285f4;
+	text-align: center;
+	}
+
+	/*main*/
+	#main{
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 200px 70px 70px 200px;
+		grid-template-areas: 
+		". logo ."
+		". searchbar ."
+		". button-box ."
+		". offered .";
+	}
+#logo{
+	grid-area: logo;
+	align-self: flex-end;
+	margin-right: auto;
+	margin-left: auto;
+}
+#searchbar{
+	grid-area: searchbar;
+	height: 40px;
+	width: 100%;
+	align-self: center;
+	margin: auto;
+	border: 1px solid #dadce0;
+	border-radius: 30px;
+}
+#searchbar:hover {
+	box-shadow: 1px 1px 2px 1px #dadce0;
+}
+#searchbar:focus {
+	outline: none;
+	box-shadow: 1px 1px 5px grey;
+}
+#button-box{
+	grid-area: button-box;
+	display:flex;
+	text-align: center;
+	align-self: center;
+	margin: auto;
+	height: 35px;
+}
+	.btn{
+	background-color: #f8f9fa;
+	font-family: normal arial sans-serif 14px;
+	color: #3c4043;
+	border-color: transparent;	
+	border-radius: 5%
+	}
+	.btn:hover{
+	box-shadow: 1px 1px 2px 1px #dadce0;
+}
+#gsearch{
+	grid-area: gsearch;
+	margin-right: 4px;
+
+	}
+
+#rsearch{
+	grid-area: rsearch;
+	margin-left: 4px;
+}
+
+#offered{
+	grid-area: offered;
+	align-self: flex-start;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: arial, sans-serif 13px;
+	text-decoration: none;
+}
+	/*footer*/
+	#footer{
+		align-content: flex-end;
+		position: fixed;
+		left: 0;
+  		bottom: 0;
+  		width: 100%;
+		background-color: #f2f2f2;
+		display: grid;
+		grid-auto-columns: 80px 80px 80px 140px 1fr 80px 80px 80px;
+		grid-template-rows: 1px 40px 40px;
+		grid-template-areas: 
+		"line line line line line line line line"
+		"country . . . . . . ."
+		"ad business about hsw . privacy terms setting";
+
+	}
+	.footer-item{
+		text-decoration: none;
+		color: rgb(112, 117, 122);
+		align-self: center;
+		margin: auto;
+	}
+#country{
+grid-area: country;
+}
+#ad{
+grid-area: ad;
+}
+#business{
+grid-area: business;
+}
+#about{
+grid-area: about;
+}
+#hsw{
+grid-area: hsw;
+}
+#privacy{
+grid-area: privacy;
+}
+#terms{
+grid-area: terms;
+}
+#setting{
+grid-area: setting
+}
+
